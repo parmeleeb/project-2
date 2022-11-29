@@ -1,14 +1,14 @@
  _________________________________________
-|KEY / LEGEND:					|
-|							|
-| (-) requirement not started			|
-| (~) requirement under construction	|
-| (+) requirement met				|
-|							|
-| (B) [Comment from Brian]			|
-| (E) [Comment from Edwin]			|
-|							|
-|_________________________________________|
+|KEY / LEGEND:					
+|							
+| (-) requirement not started			
+| (~) requirement under construction	
+| (+) requirement met				
+|							
+| (B) [Comment from Brian]			
+| (E) [Comment from Edwin]			
+|							
+|_________________________________________
 
 (B) [With our POWERS COMBINED, we can do this!]
 
