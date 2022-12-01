@@ -3,11 +3,21 @@
 /* ---------------------------------------------------- */
 /*          Organized by SCOPE / page ORDER             */
 /* ---------------------------------------------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 header {
     background-color: palegoldenrod;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column: span 2;
+
 }
 
 /* ---------------------------------------------------- */
@@ -15,6 +25,32 @@ header {
 /* ---------------------------------------------------- */
 /*               Organized ALPHABETICAL                 */
 /* ---------------------------------------------------- */
+
+.item {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+}
+
+.item-description {
+    background-color: orange;
+}
+
+.item-edit {
+    background-color: red;
+}
+
+.item-complete {
+    background-color: blue;
+}
+
+.item-delete {
+    background-color: greenyellow;
+}
+
+.list {
+    background-color: beige;
+    margin: 1%;
+}
 
 
 
