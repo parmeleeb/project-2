@@ -10,8 +10,11 @@
     <script type="text/javascript" src="../js/to-do-list.js"></script>
 
 </head>
-<body>
+<body onload="displayLists()">
     <header>
+        <h1>
+            To Do Lists
+        </h1>
         <nav>
         <button onclick="test()">option 1</button>
         <button> Option 2 </button>
@@ -19,16 +22,14 @@
         </nav>
     </header>
 
-    <div class="list" id="to-do-list">
-
+    <div class="list">
         <div>
             <label for="To-Do">Enter To-Do:</label>
-            <input id="to-do-list" type="text" name="To-Do" placeholder="Enter to do task..." />
+            <input type="text" name="To-Do" placeholder="Enter to do task..." />
 
-            <button id="add"> Add </button>
+            <button id="add" onclick="addToDoItem('placeholder text')"> Add </button>
 
         </div>
-
         <table>
             <thead>
                 <th style="padding-right: 300px; padding-left: 100px;">To do list</th>
@@ -36,26 +37,15 @@
             </thead>
             <tbody id="table-body"></tbody>
         </table>
-
-        <div class="item" id="item1">
-            <span class="item-description"> <td>To do item 1</td></span>
-            <span class="item-edit"><button>Edit</button></span>
-            <span class="item-complete"><button>Complete</button></span>
-            <span class="item-delete"><button onclick="deleteItem()">Delete</button></span>
-        </div>
-
+        <div id="to-do-list"></div>
     </div>
 
-    <div class="list" id="to-do-list">
-        
+    <div class="list">
         <div>
             <label for="To-Do">Enter completed task:</label>
-            <input id="to-do-list" type="text" name="To-Do" placeholder="Enter completed task..." />
-
-            <button id="add"> Add </button>
-
+            <input type="text" name="completed" placeholder="Enter completed task..." />
+            <button id="add" onclick="addCompletedItem('placeholder text')"> Add </button>
         </div>
-
         <table>
             <thead>
                 <th style="padding-right: 300px; padding-left: 100px;">completed task list</th>
@@ -63,13 +53,7 @@
             </thead>
             <tbody id="table-body"></tbody>
         </table>
-
-        <div class="item" id="item1">
-            <span class="item-description"><td>Complete item 1</td></span>
-            <span class="item-edit"><button> Edit </button></span>
-            <span id="add"><button> Incomplete </button></span>
-            <span class="item-delete"><button onclick="deleteItem()">Delete</button></span>
-        </div>
+        <div id="completed-list"></div>
     </div>
 
 </body>

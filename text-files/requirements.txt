@@ -25,11 +25,11 @@
 - Functional Requirements -
 \\\\\\\\\\\\\-/////////////
 
-(-) add items to list
-(-) remove items from list
+(~) add items to list           (B) [Functionally everything is working, except I have not written the script to take in the user input or edit]
+(+) remove items from list
 (-) edit items already in list
-(-) button to mark item finished
-(-) finished items move to seperate list
+(+) button to mark item finished
+(+) finished items move to seperate list
 
 
 ///////////////-\\\\\\\\\\\\\\\
@@ -56,32 +56,32 @@
 - Todo List -
 \\\\\\-//////
 
-(-) display all tasks marked as "To Do"
-(-) contains "add item" button
+(+) display all tasks marked as "To Do"
+(~) contains "add item" button
 
 
 //////-\\\\\\
 - Todo Item -
 \\\\\\-//////
 
-(-) contains "edit item" button
-(-) contains "delete item" button
-(-) contains "complete item" (mark "Finished") button (that moves the item to other list)
+(~) contains "edit item" button
+(+) contains "delete item" button
+(+) contains "complete item" (mark "Finished") button (that moves the item to other list)
 
 
 ////////-\\\\\\\\
 - Finished List -
 \\\\\\\\-////////
 
-(-) display all tasks marked as "Finished"
-(-) contains "add item" button
+(+) display all tasks marked as "Finished"
+(~) contains "add item" button
 
 
 ////////-\\\\\\\\
 - Finished Item -
 \\\\\\\\-////////
 
-(-) contains "edit item" button
-(-) contains "delete item" button
-(-) contains "uncomplete item" (mark "To Do") button (that moves the item to other list)
+(~) contains "edit item" button
+(+) contains "delete item" button
+(+) contains "uncomplete item" (mark "To Do") button (that moves the item to other list)
 

@@ -14,11 +14,13 @@ body {
 }
 
 header {
-    background-color: palegoldenrod;
+    grid-column: span 2;    
+    background-color: red;
+}
+
+nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column: span 2;
-
 }
 
 /* ---------------------------------------------------- */
@@ -41,6 +43,10 @@ header {
 }
 
 .item-complete {
+    background-color: blue;
+}
+
+.item-incomplete {
     background-color: blue;
 }
 
