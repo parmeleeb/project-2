@@ -10,50 +10,60 @@
     <script type="text/javascript" src="../js/to-do-list.js"></script>
 
 </head>
+
 <body onload="displayLists()">
+
     <header>
+
         <h1>
             To Do Lists
         </h1>
+
         <nav>
-        <button onclick="test()">option 1</button>
-        <button> Option 2 </button>
-        <button>option 3 </button>
+        <button class="nav-styling" onclick="test()">Option 1</button>
+        <button class="nav-styling"> Option 2 </button>
+        <button class="nav-styling">Option 3 </button>
         </nav>
     </header>
 
     <div class="list">
-        <div>
-            <label for="To-Do">Enter To-Do:</label>
+        <div class="div-lable-styling">
+            <label for="To-Do"><!--Enter To-Do:--></label>
             <input type="text" name="To-Do" placeholder="Enter to do task..." />
 
-            <button id="add" onclick="addToDoItem('placeholder text')"> Add </button>
+            <button class="add-button-styling" id="add" onclick="addToDoItem('placeholder text')"> Add </button>
 
         </div>
+    <div class="list-styling">
         <table>
-            <thead>
-                <th style="padding-right: 300px; padding-left: 100px;">To do list</th>
+            <thead >
+                <th>To do list</th>
                 <th>Action pane</th>
             </thead>
             <tbody id="table-body"></tbody>
         </table>
         <div id="to-do-list"></div>
+      
+    </div>
     </div>
 
     <div class="list">
-        <div>
-            <label for="To-Do">Enter completed task:</label>
+        <div class="div-lable-styling">
+            <label for="To-Do"><!--Enter completed task:--></label>
             <input type="text" name="completed" placeholder="Enter completed task..." />
-            <button id="add" onclick="addCompletedItem('placeholder text')"> Add </button>
+            <button class="add-button-styling" id="add" onclick="addCompletedItem('placeholder text')"> Add </button>
         </div>
+
+        <div class="list-styling">
         <table>
             <thead>
-                <th style="padding-right: 300px; padding-left: 100px;">completed task list</th>
+                <th>completed task list</th>
                 <th>Action pane</th>
             </thead>
             <tbody id="table-body"></tbody>
         </table>
         <div id="completed-list"></div>
+    </div>
     </div>
 
 </body>
