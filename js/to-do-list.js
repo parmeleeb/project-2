@@ -81,9 +81,11 @@ function displayCompletedItem(elementId) {
     itemDiv.id = elementId;
 
     itemDescription.className = "item-description";
+    itemDescription.id = elementId + '#toEdit';
     itemDescription.innerText = elementId;
 
     editButton.innerText = "Edit";
+    editButton.onclick = () => editCompletedItem(elementId + '#toEdit');
     itemEdit.appendChild(editButton);
     itemEdit.className = "item-edit";
 
@@ -107,17 +109,37 @@ function displayCompletedItem(elementId) {
 
 // these functions add item to the lists then re-call the respective display functions
 function addToDoItem(elementId) {
+    if(elementId === null) {
+        newTask = document.getElementById("to-do-task").value;
+        toDoList.push(newTask);
+    }
+    else {
     toDoList.push(elementId);
+    }
     displayToDo();
 }
 
 function addCompletedItem(elementId) {
+    if(elementId === null) {
+        newTask = document.getElementById("completed-task").value;
+        completedList.push(newTask);
+    }
+    else {
     completedList.push(elementId);
+    }
     displayCompleted();
 }
 
 
 // insert edit function here
+function editCompletedItem(elementId) {
+    const editInput = document.createElement('input');
+    taskToEdit = document.getElementById(elementId);
+    internalText = taskToEdit.innerHTML;
+    taskToEdit.innerHTML = '';
+    editInput.value = internalText;
+    taskToEdit.append(editInput);
+}
 
 
 // these functions transfer the item to the other list by calling the add and delete functions
