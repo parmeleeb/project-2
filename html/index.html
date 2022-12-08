@@ -19,12 +19,15 @@
             To Do Lists
         </h1>
 
+        <!-- these are the buttons on our nav heading. No fuunctionality yet -->
         <nav>
-        <button class="nav-styling" onclick="test()">Option 1</button>
-        <button class="nav-styling"> Option 2 </button>
-        <button class="nav-styling">Option 3 </button>
+        <button class="nav-styling" onclick="test()">To Do List</button>
+        <button class="nav-styling">Completed List</button>
+        <button class="nav-styling">Split Screen</button>
         </nav>
     </header>
+
+    <!-- Section for adding item to To Do List -->
 
     <div class="list">
         <div class="div-lable-styling">
@@ -34,6 +37,9 @@
             <button class="add-button-styling" id="add" onclick="addToDoItem('placeholder text')"> Add </button>
 
         </div>
+
+        <!-- List of To Do Items -->
+
     <div class="list-styling">
         <table>
             <thead>
@@ -43,10 +49,12 @@
             <tbody id="table-body"></tbody>
         </table>
         <p></p>
-        <div style="padding: 5px;" id="to-do-list"></div>
+        <div id="to-do-list"></div>
       
     </div>
     </div>
+
+    <!-- Section for adding Completed To Do Items -->
 
     <div class="list">
         <div class="div-lable-styling">
@@ -54,6 +62,8 @@
             <input type="text" name="completed" placeholder="Enter completed task..." />
             <button class="add-button-styling" id="add" onclick="addCompletedItem('placeholder text')"> Add </button>
         </div>
+
+        <!-- List of completed To Do List items -->
 
         <div class="list-styling">
         <table>
@@ -64,7 +74,7 @@
             <tbody id="table-body"></tbody>
         </table>
         <p></p>
-        <div style="padding: 5px;" id="completed-list"></div>
+        <div id="completed-list"></div>
     </div>
     </div>
 
